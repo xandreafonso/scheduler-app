@@ -1,0 +1,13 @@
+### Criar
+POST http://127.0.0.1:5000/schedule
+Content-Type: application/json
+
+{
+  "name": "Print Test",
+  "cron_expression": "* * * * *",
+  "script_content": "print('Executando script')",
+  "dependencies": ""
+}
+
+### Remover
+DELETE http://127.0.0.1:5000/schedule/09d8daa1-1733-40cc-b602-e0e8c08bc1be
